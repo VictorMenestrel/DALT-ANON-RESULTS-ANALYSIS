@@ -1,0 +1,35 @@
+[project]
+name = "DALT-anon-results-analysis"
+version = "0.1.0"
+description = "Analysis of crowdsourced speech intelligibility Diagnostic Alliteration Test (DALT) results and correlations with ASR systems. Provision of an algorithm to automatically estimate the phonemic intelligibility of speech anonymizers, based on the collected human data."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.14.0",
+    "huggingface-hub>=1.27.0",
+    "librosa>=1.0.0",
+    "nemo-toolkit[asr]>=3.0.0",
+    "pandas>=3.0.5",
+    "peft>=0.20.0",
+    "phonemizer>=3.4.0",
+    "plotly>=7.0.0",
+    "pygwalker>=0.5.0.1",
+    "pyrefly>=1.2.0",
+    "scipy>=1.18.0",
+    "scipy-stubs>=1.18.1.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "torch>=2.13.0",
+    "torchaudio>=2.11.0",
+    "torchcodec>=0.15.0",
+    "tqdm>=4.70.0",
+    "transformers>=5.15.0",
+    "types-seaborn>=0.13.2.20260728",
+    "types-tqdm>=4.70.0.20260906",
+]
+
+[tool.pyrefly]
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]
